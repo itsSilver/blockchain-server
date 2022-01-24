@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "name": "leads"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "message": {
+      "type": "richtext"
+    }
+  }
+}
