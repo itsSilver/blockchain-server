@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'Backend-royale',
+      name: 'Backend-explorer',
       // cwd: "autostop-backend",
       exec_mode: 'cluster',
       instances: 'max', // Or a number of instances
