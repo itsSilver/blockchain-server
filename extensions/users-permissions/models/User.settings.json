@@ -59,24 +59,20 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "avatar": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "full_name": {
-      "type": "string"
-    },
     "coin_balance": {
       "type": "decimal"
     },
     "exchange_rate": {
       "type": "decimal"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "passw": {
+      "type": "string"
     },
     "blockchain": {
       "type": "string"
