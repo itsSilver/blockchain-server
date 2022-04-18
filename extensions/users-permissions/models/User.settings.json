@@ -77,6 +77,9 @@
     },
     "exchange_rate": {
       "type": "decimal"
+    },
+    "blockchain": {
+      "type": "string"
     }
   }
 }
