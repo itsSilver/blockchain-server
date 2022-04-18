@@ -2,17 +2,16 @@ module.exports = ({ env }) => ({
   defaultConnection: "default",
   connections: {
     default: {
-      connector: "bookshelf",
+      connector: "mongoose",
       settings: {
-        client: "postgres",
-        host: env("DATABASE_HOST", "127.0.0.1"),
-        port: env.int("DATABASE_PORT", 5432),
-        database: env("DATABASE_NAME", "blockchain"),
-        username: env("DATABASE_USERNAME", "postgres"),
-        password: env("DATABASE_PASSWORD", "ChiefSosa@123S"),
-        ssl: env.bool("DATABASE_SSL", false),
+        client: "mongo",
+        uri: "mongodb+srv://chiefsosa:ChiefSosa@123@cluster0.rcl2s.mongodb.net/Cluster0?retryWrites=true&w=majority",
       },
-      options: { strict: "true" },
+      options: {
+        ssl: true,
+      },
     },
   },
 });
+
+// mongodb+srv://chiefsosa:<password>@cluster0.rcl2s.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
